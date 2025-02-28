@@ -18,14 +18,14 @@ public class ContextController : ControllerBase
     }
 
     [HttpPost("set-context")]
-    public async Task<IActionResult> SetContext([FromHeader(Name = "X-System")] string system, [FromBody] Context context)
+    public async Task<IActionResult> SetContextAsync([FromHeader(Name = "X-System")] string system, [FromBody] Context context)
     {
         await this.mediator.Send(new SetContextCommand(system, context));
         return this.NoContent();
     }
 
     [HttpGet("get")]
-    public async Task<IActionResult> GetContext([FromHeader(Name = "X-System")] string system)
+    public async Task<IActionResult> GetContextAsync([FromHeader(Name = "X-System")] string system)
     {
         var context = await this.mediator.Send(new GetContextQuery(system));
         return this.Ok(context);
