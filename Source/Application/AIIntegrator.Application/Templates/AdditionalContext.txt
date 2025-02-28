@@ -1,0 +1,3 @@
+﻿Dodatkowe informacje: #ADDITIONAL_CONTEXT#
+Jeżeli korzystasz z dodatkowych informacji, nie zwracaj action ani parameters.
+Odpowiadaj ZAWSZE w postaci JSON.

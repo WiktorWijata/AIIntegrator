@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <SpaRoot>ClientApp</SpaRoot>
+    <SpaProxyLaunchCommand>npm run dev</SpaProxyLaunchCommand>
+    <SpaProxyServerUrl>https://localhost:63601</SpaProxyServerUrl>
+	<StartupCommand>npm run dev</StartupCommand>
+	<JavaScriptTestRoot>src\</JavaScriptTestRoot>
+	<JavaScriptTestFramework>Vitest</JavaScriptTestFramework>
+	<ShouldRunBuildScript>false</ShouldRunBuildScript>
+	<BuildOutputFolder>$(MSBuildProjectDirectory)\dist</BuildOutputFolder>  
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaProxy">
+      <Version>9.*-*</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\src\types\" />
+  </ItemGroup>
+
+</Project>

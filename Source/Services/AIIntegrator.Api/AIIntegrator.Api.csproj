@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
+    <PackageReference Include="Polly.Extensions.Http" Version="3.0.0" />
+    <PackageReference Include="Refit" Version="8.0.0" />
+    <PackageReference Include="Refit.HttpClientFactory" Version="8.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\AIIntegrator.Application.Setup\AIIntegrator.Application.Setup.csproj" />
+    <ProjectReference Include="..\..\Application\AIIntegrator.Application\AIIntegrator.Application.csproj" />
+    <ProjectReference Include="..\..\Contracts\AIIntegrator.Api.Contracts\AIIntegrator.Api.Contracts.csproj" />
+    <ProjectReference Include="..\..\Contracts\AIIntegrator.ExternalContracts\AIIntegrator.ExternalContracts.csproj" />
+  </ItemGroup>
+
+</Project>

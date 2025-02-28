@@ -1,0 +1,41 @@
+// {
+//     "context": {
+//         "name": "Hotel Nadmorski",
+//         "address": "ul. Nadmorska 1, 80-120 Gdańsk",
+//         "phone": "58 123 45 67",
+//         "email": "",
+//         "amenities": [
+//             "TV",
+//             "Klimatyzacja",
+//             "Łazienka",
+//             "Balkon",
+//             "Basen"
+//         ]
+//     },
+//     "message": "Czy w hotelu jest basen ?"
+// }
+
+{
+    "response": "Twoja odpowiedź dla użytkownika.",
+    "function": {
+        "name": "CheckRoomAvability",
+        "parameters": [
+            {
+                "name": "roomType",
+                "value": "double"
+            },
+            {
+                "name": "dateFrom",
+                "value": null
+            },
+            {
+                "name": "dateTo",
+                "value": null
+            },
+            {
+                "name": "peopleCount",
+                "value": 2
+            }
+        ]
+    }
+}

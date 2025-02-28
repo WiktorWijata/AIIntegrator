@@ -1,0 +1,108 @@
+{
+  "message": "Jesteś inteligentnym asystentem hotelowym.",
+  "functions": [
+    {
+      "name": "CheckRoomAvability",
+      "description": "funkcja sprawdza dostępność pokoju w zakresie dat",
+      "parameters": [
+        {
+          "name": "roomType",
+          "type": "string",
+          "description": "okreśa czy apartament, itp."
+        },
+        {
+          "name": "dateFrom",
+          "type": "DateTime",
+          "description": "zakres daty od"
+        },
+        {
+          "name": "dateTo",
+          "type": "DateTime",
+          "description": "zakres daty do"
+        },
+        {
+          "name": "peopleCount",
+          "type": "int",
+          "description": "określa dla ilu osób miałby to być pokój"
+        }
+      ]
+    },
+    {
+      "name": "GetRoomDetails",
+      "description": "funkcja zwraca szczegóły pokoju",
+      "parameters": [
+        {
+          "name": "roomId",
+          "type": "int",
+          "description": "identyfikator pokoju"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "nazwa pokoju"
+        },
+        {
+          "name": "number",
+          "type": "string",
+          "description": "numer pokoju"
+        }
+      ]
+    },
+    {
+      "name": "GetHotelInfo",
+      "description": "funkcja zwraca szczegóły hotelu"
+    }
+  ]
+}
+
+{
+  "HotelDetails": [
+    {
+      "name": "Hotel Nadmorski",
+      "address": "ul. Nadmorska 1, 80-120 Gdańsk",
+      "phone": "58 123 45 67",
+      "email": ",,
+      "amenities": [
+        "TV",
+        "Klimatyzacja",
+        "Łazienka",
+        "Balkon",
+        "Basen"
+      ]
+  ]
+}
+
+//{
+//  "RoomDetails": [
+//    {
+//      "roomId": 1,
+//      "name": "Pokój 1",
+//      "number": "101",
+//      "roomType": "Apartament",
+//      "price": 200,
+//      "peopleCount": 4,
+//      "description": "Apartament z widokiem na morze",
+//      "amenities": [
+//        "TV",
+//        "Klimatyzacja",
+//        "Łazienka",
+//        "Balkon",
+//        "WIFI"
+//      ]
+//    },
+//    {
+//      "roomId": 2,
+//      "name": "Pokój 2",
+//      "number": "102",
+//      "roomType": "Pokój jednoosobowy",
+//      "price": 100,
+//      "peopleCount": 1,
+//      "description": "Pokój jednoosobowy z widokiem na morze",
+//      "amenities": [
+//        "TV",
+//        "Klimatyzacja",
+//        "Łazienka"
+//      ]
+//    }
+//  ]
+//}

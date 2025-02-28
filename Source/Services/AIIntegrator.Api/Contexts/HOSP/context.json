@@ -1,0 +1,57 @@
+﻿{
+  "Message": "Jeste\u015B inteligentnym asystentem hotelowym.",
+  "Functions": [
+    {
+      "Name": "CheckRoomAvability",
+      "Description": "funkcja sprawdza dost\u0119pno\u015B\u0107 pokoju w zakresie dat",
+      "Parameters": [
+        {
+          "Name": "roomType",
+          "Type": "string",
+          "Description": "okre\u015Ba czy apartament, itp."
+        },
+        {
+          "Name": "dateFrom",
+          "Type": "DateTime",
+          "Description": "zakres daty od"
+        },
+        {
+          "Name": "dateTo",
+          "Type": "DateTime",
+          "Description": "zakres daty do"
+        },
+        {
+          "Name": "peopleCount",
+          "Type": "int",
+          "Description": "okre\u015Bla dla ilu os\u00F3b mia\u0142by to by\u0107 pok\u00F3j"
+        }
+      ]
+    },
+    {
+      "Name": "GetRoomDetails",
+      "Description": "funkcja zwraca szczeg\u00F3\u0142y pokoju",
+      "Parameters": [
+        {
+          "Name": "roomId",
+          "Type": "int",
+          "Description": "identyfikator pokoju"
+        },
+        {
+          "Name": "name",
+          "Type": "string",
+          "Description": "nazwa pokoju"
+        },
+        {
+          "Name": "number",
+          "Type": "string",
+          "Description": "numer pokoju"
+        }
+      ]
+    },
+    {
+      "Name": "GetHotelInfo",
+      "Description": "funkcja zwraca szczeg\u00F3\u0142y hotelu",
+      "Parameters": null
+    }
+  ]
+}
