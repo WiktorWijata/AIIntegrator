@@ -32,16 +32,14 @@ export const Chat = () => {
         setInputText('');
 
         try {
-            const response = await fetch(`${config.apiBaseUrl}api/chat/send-message`, {
+            const response = await fetch(`${config.apiBaseUrl}chat/send-message`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'X-System': 'HOSP'
                 },
                 body: JSON.stringify({
-                    system: "HOSP",
-                    message: {
-                        message: inputText
-                    }
+                    message: inputText
                 })
             });
 

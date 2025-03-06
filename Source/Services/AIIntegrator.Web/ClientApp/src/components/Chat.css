@@ -16,25 +16,30 @@
     background-color: #f5f5f5;
     border-radius: 8px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .message {
     margin: 10px 0;
     padding: 10px 15px;
     border-radius: 15px;
+    width: fit-content;
     max-width: 70%;
+    word-wrap: break-word;
+    background-color: #e9ecef;
 }
 
 .user-message {
     background-color: #007bff;
     color: white;
-    margin-left: auto;
+    align-self: flex-end;
 }
 
 .bot-message {
     background-color: #e9ecef;
     color: black;
-    margin-right: auto;
+    align-self: flex-start;
 }
 
 .input-container {
