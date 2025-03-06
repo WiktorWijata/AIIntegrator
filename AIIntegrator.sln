@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIIntegrator.Api.Contracts"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIIntegrator.Application.Setup", "Source\Application\AIIntegrator.Application.Setup\AIIntegrator.Application.Setup.csproj", "{8226A7F8-3EA2-4927-A192-DF02CF31E0BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIIntegrator.Host", "Source\Services\AIIntegrator.Host\AIIntegrator.Host.csproj", "{54914847-6C25-493A-861E-DFA596CF1E2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{8226A7F8-3EA2-4927-A192-DF02CF31E0BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8226A7F8-3EA2-4927-A192-DF02CF31E0BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8226A7F8-3EA2-4927-A192-DF02CF31E0BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54914847-6C25-493A-861E-DFA596CF1E2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54914847-6C25-493A-861E-DFA596CF1E2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54914847-6C25-493A-861E-DFA596CF1E2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54914847-6C25-493A-861E-DFA596CF1E2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +73,7 @@ Global
 		{23900A5D-B917-4EB7-A68D-95E3E884C429} = {7850664E-7420-4696-A635-BF2BF2CE1E11}
 		{57A1D3BC-8414-4DC6-9F9D-71693540597A} = {7850664E-7420-4696-A635-BF2BF2CE1E11}
 		{8226A7F8-3EA2-4927-A192-DF02CF31E0BF} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{54914847-6C25-493A-861E-DFA596CF1E2C} = {4069C943-69E2-4BD7-A077-6B6AB2AE69C9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F6D49BCD-2EB7-4327-B56A-ADF378B98ECC}
